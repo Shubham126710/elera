@@ -1,4 +1,13 @@
 import { questions as originalQuestions } from './questions.js';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import DitherHero from './DitherHero.jsx';
+
+// Mount React Component
+const ditherRoot = document.getElementById('dither-root');
+if (ditherRoot) {
+  createRoot(ditherRoot).render(<DitherHero color="#ffffff" backgroundColor="#0b0b0b" />);
+}
 
 // App State
 let currentQuestions = [...originalQuestions];
@@ -21,6 +30,7 @@ const screens = {
 };
 
 const elements = {
+  dashboardHeader: document.getElementById('dashboard-header'),
   scoreDisplay: document.getElementById('score'),
   questionText: document.getElementById('question-text'),
   optionsContainer: document.getElementById('options-container'),
@@ -95,6 +105,12 @@ function showScreen(screenName) {
     screen.classList.remove('active');
   });
   screens[screenName].classList.add('active');
+  
+  if (screenName === 'quiz' || screenName === 'end') {
+    elements.dashboardHeader.style.display = 'flex';
+  } else {
+    elements.dashboardHeader.style.display = 'none';
+  }
 }
 
 // Initialize Quiz

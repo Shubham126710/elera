@@ -43,17 +43,8 @@
             </div>
           </div>
           
-          <div class="hero-graphic-container">
-            <div class="graphic-status">
-              <span class="status-dot"></span> PAGE VIEWS: 787
-            </div>
-            <div class="dither-art">
-              <!-- Abstract CSS art mimicking the stacked books with dither -->
-              <div class="art-layer layer-a"></div>
-              <div class="art-layer layer-b"></div>
-              <div class="art-layer layer-c"></div>
-              <div class="art-layer layer-d"></div>
-            </div>
+          <div class="hero-graphic-container" id="dither-root">
+            <!-- React DitherHero component will mount here -->
           </div>
         </section>
 
@@ -98,18 +89,22 @@
 
             <div class="bento-card span-2">
               <div class="card-icon">🏢</div>
-              <h3>Unit 4 & 5: Org & Mass Media</h3>
-              <p class="card-desc">Explore workplace communication and mass media evolution.</p>
-              <div class="split-list">
-                <ul>
-                  <li>Workplace Principles & Flow</li>
-                  <li>Organizational Culture</li>
-                </ul>
-                <ul>
-                  <li>Evolution & Media Effects</li>
-                  <li>Mass Communication Theories</li>
-                </ul>
-              </div>
+              <h3>Unit 4: Organizational</h3>
+              <p class="card-desc">Explore workplace communication.</p>
+              <ul>
+                <li>Workplace Principles & Flow</li>
+                <li>Organizational Culture</li>
+              </ul>
+            </div>
+
+            <div class="bento-card">
+              <div class="card-icon">📺</div>
+              <h3>Unit 5: Mass Media</h3>
+              <p class="card-desc">Mass media evolution and theories.</p>
+              <ul>
+                <li>Evolution & Media Effects</li>
+                <li>Mass Communication Theories</li>
+              </ul>
             </div>
 
           </div>
@@ -121,19 +116,20 @@
         </footer>
       </div>
 
+      <!-- Shared Dashboard Header -->
+      <header id="dashboard-header" class="header" style="display: none;">
+        <div class="logo-container">
+          <div class="logo">elera.</div>
+        </div>
+        <div id="greeting-msg" class="greeting-text"></div>
+        <div class="header-right">
+          <div class="score-display">SCORE: <span id="score">0</span></div>
+          <button id="mobile-menu-btn" class="mobile-only btn small-btn">☰</button>
+        </div>
+      </header>
+
       <!-- Main Quiz Layout -->
       <div id="quiz-screen" class="screen">
-        <header class="header">
-          <div class="logo-container">
-            <div class="logo-icon"></div>
-            <div class="logo">elera.</div>
-          </div>
-          <div id="greeting-msg" class="greeting-text"></div>
-          <div class="header-right">
-            <div class="score-display">SCORE: <span id="score">0</span></div>
-            <button id="mobile-menu-btn" class="mobile-only btn small-btn">☰</button>
-          </div>
-        </header>
 
         <div class="layout-grid">
           <!-- Left Navigation -->
@@ -197,9 +193,6 @@
 
       <!-- End Screen / Results -->
       <div id="end-screen" class="screen">
-        <header class="header">
-          <div class="logo">ELERA</div>
-        </header>
         <div class="results-container">
           <div class="results-card">
             
