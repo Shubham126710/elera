@@ -142,9 +142,20 @@ function loadMoreViewAll() {
     const q = originalQuestions[i];
     const qDiv = document.createElement('div');
     qDiv.className = 'view-all-item';
+    
+    let optionsHtml = '<ul class="view-all-options">';
+    q.options.forEach((opt, idx) => {
+      const isCorrect = (opt === q.correct_answer);
+      optionsHtml += `<li class="${isCorrect ? 'correct-opt' : ''}">
+        <span class="opt-letter">${String.fromCharCode(65 + idx)}.</span> ${opt}
+      </li>`;
+    });
+    optionsHtml += '</ul>';
+    
     qDiv.innerHTML = `
       <div class="view-all-qno">Q ${i + 1}</div>
       <div class="view-all-qtext">${q.question}</div>
+      ${optionsHtml}
       <div class="view-all-answer"><strong>Correct Answer:</strong> ${q.correct_answer}</div>
     `;
     elements.questionsListContainer.appendChild(qDiv);
