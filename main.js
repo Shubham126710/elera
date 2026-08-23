@@ -59,7 +59,9 @@ const elements = {
   restartBtn: document.getElementById('restart-btn'),
   retryBtn: document.getElementById('retry-btn'),
   
-  startBtn: document.getElementById('start-btn'),
+  heroStartBtn: document.getElementById('hero-start-btn'),
+  navStartBtn: document.getElementById('nav-start-btn'),
+  greetingMsg: document.getElementById('greeting-msg'),
 };
 
 // Utility to shuffle array
@@ -100,6 +102,7 @@ function startQuiz() {
   currentQuestions = [...originalQuestions];
   resetState();
   showScreen('quiz');
+  setGreeting();
   
   // Find which page the currentQuestionIndex is on
   navCurrentPage = Math.floor(currentQuestionIndex / navItemsPerPage) + 1;
@@ -120,6 +123,25 @@ function resetState() {
   elements.quizTimer.textContent = '00:00';
   currentQuestionIndex = 0;
   navCurrentPage = 1;
+}
+
+function setGreeting() {
+  const hour = new Date().getHours();
+  const greetings = [
+    "Ready to ace this?",
+    "Happy learning!",
+    "Let's crush this exam.",
+    "Time to shine!"
+  ];
+  const randomMsg = greetings[Math.floor(Math.random() * greetings.length)];
+  
+  let timeMsg = "Good day";
+  if (hour >= 5 && hour < 12) timeMsg = "Good morning";
+  else if (hour >= 12 && hour < 17) timeMsg = "Good afternoon";
+  else if (hour >= 17 && hour < 22) timeMsg = "Evening prep";
+  else timeMsg = "Howdy night owl";
+  
+  elements.greetingMsg.textContent = `${timeMsg} • ${randomMsg}`;
 }
 
 // Pagination logic
@@ -332,7 +354,8 @@ function endQuiz() {
 
 // Initialization
 // Event Listeners
-elements.startBtn.addEventListener('click', startQuiz);
+if (elements.heroStartBtn) elements.heroStartBtn.addEventListener('click', startQuiz);
+if (elements.navStartBtn) elements.navStartBtn.addEventListener('click', startQuiz);
 elements.restartBtn.addEventListener('click', startQuiz); 
 elements.retryBtn.addEventListener('click', startQuiz);
 

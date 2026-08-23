@@ -6,7 +6,7 @@
     <title>Elera</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -18,60 +18,53 @@
       <div id="start-screen" class="screen active">
         <!-- Landing Navbar -->
         <nav class="landing-nav">
-          <div class="logo">ELERA</div>
+          <div class="logo-container">
+            <div class="logo-icon"></div>
+            <div class="logo">elera.</div>
+          </div>
           <div class="nav-links">
-            <a href="#hero">Home</a>
+            <a href="#hero">About</a>
             <a href="#syllabus">Syllabus</a>
-            <a href="#">About</a>
+            <a href="#">Contact</a>
           </div>
           <div class="nav-auth">
-            <button class="btn ghost-btn small-btn">Login</button>
-            <button class="btn primary-btn small-btn">Sign up</button>
+            <button id="nav-start-btn" class="btn primary-btn small-btn">Start Exam</button>
           </div>
         </nav>
 
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
           <div class="hero-content">
-            <div class="hero-badge">NEW EXAM AVAILABLE</div>
-            <h1 class="hero-title">Principles of Human Communication</h1>
-            <p class="hero-subtitle">Master the art of effective interaction. Dive deep into the models, theories, and practices of human communication in this comprehensive quiz experience.</p>
+            <h1 class="hero-title">Your complete<br>communication<br>repository_</h1>
+            <p class="hero-subtitle">Build your knowledge, master interactions, and ace your communication exams — all from one place.</p>
             
             <div class="hero-actions">
-              <button id="start-btn" class="btn primary-btn hero-btn">START EXAM</button>
-              <button class="btn ghost-btn hero-btn">Preview</button>
+              <button id="hero-start-btn" class="btn primary-btn hero-btn">Get Started →</button>
             </div>
           </div>
           
-          <div class="hero-graphic">
-            <div class="graphic-layer layer-1"></div>
-            <div class="graphic-layer layer-2"></div>
-            <div class="graphic-layer layer-3">
-              <div class="graphic-mockup">
-                <div class="mockup-header">
-                  <span class="dot red"></span>
-                  <span class="dot yellow"></span>
-                  <span class="dot green"></span>
-                </div>
-                <div class="mockup-body">
-                  <div class="mockup-line w-70"></div>
-                  <div class="mockup-line w-50"></div>
-                  <div class="mockup-line w-80"></div>
-                  <br>
-                  <div class="mockup-box"></div>
-                </div>
-              </div>
+          <div class="hero-graphic-container">
+            <div class="graphic-status">
+              <span class="status-dot"></span> PAGE VIEWS: 787
+            </div>
+            <div class="dither-art">
+              <!-- Abstract CSS art mimicking the stacked books with dither -->
+              <div class="art-layer layer-a"></div>
+              <div class="art-layer layer-b"></div>
+              <div class="art-layer layer-c"></div>
+              <div class="art-layer layer-d"></div>
             </div>
           </div>
         </section>
 
         <!-- Syllabus Section Below Fold -->
         <section id="syllabus" class="syllabus-section">
-          <h2 class="section-title">Course Syllabus</h2>
-          <div class="syllabus-grid">
+          <div class="bento-grid">
             
-            <div class="syllabus-card">
+            <div class="bento-card span-2">
+              <div class="card-icon">📚</div>
               <h3>Unit 1: Foundations</h3>
+              <p class="card-desc">Master the core concepts of communication.</p>
               <ul>
                 <li>Defining Communication & Process</li>
                 <li>Linear, Interactive & Transactional Models</li>
@@ -81,44 +74,42 @@
               </ul>
             </div>
 
-            <div class="syllabus-card">
+            <div class="bento-card">
+              <div class="card-icon">🤝</div>
               <h3>Unit 2: Interpersonal</h3>
+              <p class="card-desc">Deepen your understanding of dyadic relationships.</p>
               <ul>
                 <li>Dyadic Communication</li>
                 <li>Relationship Development</li>
-                <li>Social Penetration Theory</li>
                 <li>Conflict Management Styles</li>
               </ul>
             </div>
 
-            <div class="syllabus-card">
+            <div class="bento-card">
+              <div class="card-icon">👥</div>
               <h3>Unit 3: Small Group</h3>
+              <p class="card-desc">Navigate team dynamics and roles.</p>
               <ul>
-                <li>Defining Small Groups</li>
                 <li>Tuckman's Stages of Development</li>
                 <li>Task & Maintenance Roles</li>
                 <li>Decision-Making & Leadership</li>
               </ul>
             </div>
 
-            <div class="syllabus-card">
-              <h3>Unit 4: Organizational</h3>
-              <ul>
-                <li>Workplace Principles</li>
-                <li>Communication Flow & Grapevine</li>
-                <li>Organizational Culture</li>
-                <li>Formal vs. Informal Networks</li>
-              </ul>
-            </div>
-
-            <div class="syllabus-card">
-              <h3>Unit 5: Mass Communication</h3>
-              <ul>
-                <li>Functions of Mass Media</li>
-                <li>Evolution & Media Effects</li>
-                <li>Mass Communication Theories</li>
-                <li>Ethics & Media Literacy</li>
-              </ul>
+            <div class="bento-card span-2">
+              <div class="card-icon">🏢</div>
+              <h3>Unit 4 & 5: Org & Mass Media</h3>
+              <p class="card-desc">Explore workplace communication and mass media evolution.</p>
+              <div class="split-list">
+                <ul>
+                  <li>Workplace Principles & Flow</li>
+                  <li>Organizational Culture</li>
+                </ul>
+                <ul>
+                  <li>Evolution & Media Effects</li>
+                  <li>Mass Communication Theories</li>
+                </ul>
+              </div>
             </div>
 
           </div>
@@ -133,7 +124,11 @@
       <!-- Main Quiz Layout -->
       <div id="quiz-screen" class="screen">
         <header class="header">
-          <div class="logo">ELERA</div>
+          <div class="logo-container">
+            <div class="logo-icon"></div>
+            <div class="logo">elera.</div>
+          </div>
+          <div id="greeting-msg" class="greeting-text"></div>
           <div class="header-right">
             <div class="score-display">SCORE: <span id="score">0</span></div>
             <button id="mobile-menu-btn" class="mobile-only btn small-btn">☰</button>
