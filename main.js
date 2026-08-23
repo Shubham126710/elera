@@ -291,9 +291,9 @@ function endQuiz() {
   
   const percentage = Math.round((correctCount / totalQuestions) * 100) || 0;
   
-  // Animate SVG ring
+  // Animate SVG ring (hardcoded radius 52 to avoid baseVal issues while hidden)
   const circle = elements.progressCircle;
-  const radius = circle.r.baseVal.value;
+  const radius = 52;
   const circumference = radius * 2 * Math.PI;
   circle.style.strokeDasharray = `${circumference} ${circumference}`;
   const offset = circumference - (percentage / 100) * circumference;

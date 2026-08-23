@@ -3,33 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Principles of Human Communication</title>
+    <title>Elera</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <!-- Premium dither background effect for landing page -->
+    <div id="dither-bg" class="dither-overlay"></div>
     
     <div id="app">
-      <header class="header">
-        <div class="logo">ELERA</div>
-        <div class="header-right">
-          <div class="score-display">SCORE: <span id="score">0</span></div>
-          <button id="mobile-menu-btn" class="mobile-only btn small-btn">☰</button>
-        </div>
-      </header>
+      <!-- Start Screen (Landing Page) -->
+      <div id="start-screen" class="screen active">
+        <!-- Landing Navbar -->
+        <nav class="landing-nav">
+          <div class="logo">ELERA</div>
+          <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#syllabus">Syllabus</a>
+            <a href="#">About</a>
+          </div>
+          <div class="nav-auth">
+            <button class="btn ghost-btn small-btn">Login</button>
+            <button class="btn primary-btn small-btn">Sign up</button>
+          </div>
+        </nav>
 
-      <main class="quiz-container">
-        <!-- Start Screen -->
-        <div id="start-screen" class="screen active">
-          <h1>ELERA</h1>
-          <p>QUIZ PORTAL</p>
-          <button id="start-btn" class="btn primary-btn">START_SEQUENCE <span class="arrow">→</span></button>
-        </div>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+          <div class="hero-content">
+            <div class="hero-badge">NEW EXAM AVAILABLE</div>
+            <h1 class="hero-title">Principles of Human Communication</h1>
+            <p class="hero-subtitle">Master the art of effective interaction. Dive deep into the models, theories, and practices of human communication in this comprehensive quiz experience.</p>
+            
+            <div class="hero-actions">
+              <button id="start-btn" class="btn primary-btn hero-btn">START EXAM</button>
+              <button class="btn ghost-btn hero-btn">Preview</button>
+            </div>
+          </div>
+          
+          <div class="hero-graphic">
+            <div class="graphic-layer layer-1"></div>
+            <div class="graphic-layer layer-2"></div>
+            <div class="graphic-layer layer-3">
+              <div class="graphic-mockup">
+                <div class="mockup-header">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-line w-70"></div>
+                  <div class="mockup-line w-50"></div>
+                  <div class="mockup-line w-80"></div>
+                  <br>
+                  <div class="mockup-box"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <!-- Main Quiz Layout -->
-        <div id="quiz-screen" class="screen layout-grid">
+        <!-- Syllabus Section Below Fold -->
+        <section id="syllabus" class="syllabus-section">
+          <h2 class="section-title">Course Syllabus</h2>
+          <div class="syllabus-grid">
+            
+            <div class="syllabus-card">
+              <h3>Unit 1: Foundations</h3>
+              <ul>
+                <li>Defining Communication & Process</li>
+                <li>Linear, Interactive & Transactional Models</li>
+                <li>Verbal & Nonverbal Cues</li>
+                <li>Listening Barriers & Types</li>
+                <li>Culture & Diversity</li>
+              </ul>
+            </div>
+
+            <div class="syllabus-card">
+              <h3>Unit 2: Interpersonal</h3>
+              <ul>
+                <li>Dyadic Communication</li>
+                <li>Relationship Development</li>
+                <li>Social Penetration Theory</li>
+                <li>Conflict Management Styles</li>
+              </ul>
+            </div>
+
+            <div class="syllabus-card">
+              <h3>Unit 3: Small Group</h3>
+              <ul>
+                <li>Defining Small Groups</li>
+                <li>Tuckman's Stages of Development</li>
+                <li>Task & Maintenance Roles</li>
+                <li>Decision-Making & Leadership</li>
+              </ul>
+            </div>
+
+            <div class="syllabus-card">
+              <h3>Unit 4: Organizational</h3>
+              <ul>
+                <li>Workplace Principles</li>
+                <li>Communication Flow & Grapevine</li>
+                <li>Organizational Culture</li>
+                <li>Formal vs. Informal Networks</li>
+              </ul>
+            </div>
+
+            <div class="syllabus-card">
+              <h3>Unit 5: Mass Communication</h3>
+              <ul>
+                <li>Functions of Mass Media</li>
+                <li>Evolution & Media Effects</li>
+                <li>Mass Communication Theories</li>
+                <li>Ethics & Media Literacy</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="landing-footer">
+          <p>© 2026 Elera. All rights reserved.</p>
+        </footer>
+      </div>
+
+      <!-- Main Quiz Layout -->
+      <div id="quiz-screen" class="screen">
+        <header class="header">
+          <div class="logo">ELERA</div>
+          <div class="header-right">
+            <div class="score-display">SCORE: <span id="score">0</span></div>
+            <button id="mobile-menu-btn" class="mobile-only btn small-btn">☰</button>
+          </div>
+        </header>
+
+        <div class="layout-grid">
           <!-- Left Navigation -->
           <aside class="sidebar left-sidebar" id="left-sidebar">
             <div class="sidebar-header">
@@ -87,9 +198,14 @@
             </div>
           </aside>
         </div>
+      </div>
 
-        <!-- End Screen / Results -->
-        <div id="end-screen" class="screen">
+      <!-- End Screen / Results -->
+      <div id="end-screen" class="screen">
+        <header class="header">
+          <div class="logo">ELERA</div>
+        </header>
+        <div class="results-container">
           <div class="results-card">
             
             <div class="circular-progress">
@@ -125,7 +241,7 @@
             
           </div>
         </div>
-      </main>
+      </div>
     </div>
     <script type="module" src="./main.js"></script>
   </body>
