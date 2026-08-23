@@ -1,0 +1,1242 @@
+[
+    {
+        "id": 1,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Non-Verbal Communication",
+        "qno": 1,
+        "question": "Which of the following is considered non-verbal communication?",
+        "options": [
+            "A company memo",
+            "A radio reporter reading the news",
+            "A street sign that reads \"Private Drive\"",
+            "Laughter after someone tells a funny story"
+        ],
+        "correct_answer": "Laughter after someone tells a funny story",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 2,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 2,
+        "question": "Which component of the communication model is described as the method or conduit a sender uses to reach a receiver?",
+        "options": [
+            "Noise",
+            "Sender",
+            "Channel",
+            "Message"
+        ],
+        "correct_answer": "Channel",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 3,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 3,
+        "question": "Which component of the communication model is responsible for initiating the transaction and encoding the message?",
+        "options": [
+            "Noise",
+            "Sender",
+            "Channel",
+            "Receiver"
+        ],
+        "correct_answer": "Sender",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 4,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 4,
+        "question": "According to the Linear Model of Communication, communication moves only in one direction. Choose the sequence below that best describes the Linear Model of Communication.",
+        "options": [
+            "Channel, message, noise, sender, receiver",
+            "Channel, sender, receiver, message, noise",
+            "Sender, message, channel, receiver, noise",
+            "Sender, message, noise, receiver, channel"
+        ],
+        "correct_answer": "Sender, message, channel, receiver, noise",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 5,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 5,
+        "question": "Which communication theory or model asserts that communication occurs across boundaries where information and resources are shared?",
+        "options": [
+            "Systems Theory",
+            "Social Judgment Theory",
+            "Symbolic Interactionism",
+            "Social Penetration Theory"
+        ],
+        "correct_answer": "Systems Theory",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 6,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 6,
+        "question": "Which of the following is a body of statements that represent a clear, rounded, and systematic view of a subject at a high level of abstraction?",
+        "options": [
+            "Model",
+            "Theory",
+            "Discipline",
+            "Organization"
+        ],
+        "correct_answer": "Theory",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 7,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 7,
+        "question": "People process information in one of two ways: the intensive central route or the simple cues peripheral route. Which communication theory or model is typically used to explain persuasion?",
+        "options": [
+            "Constructivism",
+            "Symbolic Interactionism",
+            "Elaboration of Likelihood Model",
+            "Coordinated Management of Meaning"
+        ],
+        "correct_answer": "Elaboration of Likelihood Model",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 8,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Non-Verbal Communication",
+        "qno": 8,
+        "question": "At the intersection of appreciating diversity and its effect on communication is our understanding of belief systems, values, and behaviors that support a particular ideology or social arrangement. This is also known as:",
+        "options": [
+            "haptics",
+            "culture",
+            "proxemics",
+            "paralanguage"
+        ],
+        "correct_answer": "culture",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 9,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Culture, Gender & Identity",
+        "qno": 9,
+        "question": "Which of the following terms is defined as the psychological discomfort of adjusting to a new cultural system?",
+        "options": [
+            "Human nature",
+            "Culture shock",
+            "Ethnocentrism",
+            "Multicultural communication"
+        ],
+        "correct_answer": "Culture shock",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 10,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 10,
+        "question": "Fill in the blank. In communication, the _______________ decodes the message.",
+        "options": [
+            "noise",
+            "sender",
+            "channel",
+            "receiver"
+        ],
+        "correct_answer": "receiver",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 11,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 11,
+        "question": "Which communication theory or model asserts that people strive to maintain a positive image with others because individuals are concerned with how others might perceive them?",
+        "options": [
+            "Attribution Theory",
+            "Issues of Face Theory",
+            "Symbolic Interactionism",
+            "Elaboration of Likelihood Model"
+        ],
+        "correct_answer": "Issues of Face Theory",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 12,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Interpersonal Relationships",
+        "qno": 12,
+        "question": "Fill in the blank. Revealing information about yourself as a means to claim an authentic identity is one definition of:",
+        "options": [
+            "self-disclosure",
+            "appearance management",
+            "impression management",
+            "interpersonal communication"
+        ],
+        "correct_answer": "self-disclosure",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 13,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 13,
+        "question": "According to which theory or model of communication is attitude change mediated by judgmental process and effects?",
+        "options": [
+            "Constructivism",
+            "Social Judgment Theory",
+            "Elaboration of Likelihood Model",
+            "Coordinated Management of Meaning"
+        ],
+        "correct_answer": "Social Judgment Theory",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 14,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 14,
+        "question": "Fill in the blank. _______________ is any meaning conveyed through sounds, behaviors, and artifacts other than words.",
+        "options": [
+            "Noise",
+            "Nonverbal communication",
+            "Spoken verbal communication",
+            "Written verbal communication"
+        ],
+        "correct_answer": "Nonverbal communication",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 15,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 15,
+        "question": "Fill in the blank. _____________ is any barrier that interferes with the sending or receiving of a message.",
+        "options": [
+            "Noise",
+            "Channel",
+            "Culture",
+            "Message"
+        ],
+        "correct_answer": "Noise",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 16,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Foundations",
+        "qno": 16,
+        "question": "Which of the following statements about ethics in communication is false?",
+        "options": [
+            "Ethical communication results in ethical outcomes or ends.",
+            "Ethical communication is prepared with the intention of telling the truth.",
+            "Ethical communication relies on manipulating facts to achieve a covert outcome.",
+            "Ethical communication relies on the use of ethical means or rationales to achieve an outcome."
+        ],
+        "correct_answer": "Ethical communication relies on manipulating facts to achieve a covert outcome.",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 17,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Organizational Communication",
+        "qno": 17,
+        "question": "Which of the following is the process by which we attach meaning to the world around us?",
+        "options": [
+            "Selection",
+            "Perception",
+            "Organization",
+            "Interpretation"
+        ],
+        "correct_answer": "Perception",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 18,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Interpersonal Relationships",
+        "qno": 18,
+        "question": "We are experiencing which of the following relational dialectics when we may miss our romantic partner when she or he is away but simultaneously enjoy that time that we have to ourselves?",
+        "options": [
+            "Autonomy-Connection",
+            "Openness-Closedness",
+            "Novelty-Predictability",
+            "Positivity-Negativity"
+        ],
+        "correct_answer": "Autonomy-Connection",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 19,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Interpersonal Relationships",
+        "qno": 19,
+        "question": "Darnell and Chris are friends who value one another's differences. This has always been a strong point in their relationship. It is now an election year, and Darnell and Chris find that they do not share the same political ideologies. This scenario exhibits what type of conflict?",
+        "options": [
+            "Goal conflict",
+            "Value conflict",
+            "Affective conflict",
+            "Cognitive conflict"
+        ],
+        "correct_answer": "Value conflict",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 20,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Foundations",
+        "qno": 20,
+        "question": "Which of the following is an example of a confirming climate in interpersonal communication?",
+        "options": [
+            "You go for a job interview, and the receptionist never looks up to see that someone has entered the room.",
+            "You go for a job interview, and the receptionist takes your application and files it away before reading it.",
+            "You go for a job interview, and the manager greets you with a smile, a handshake, and says \"Good to meet you.\"",
+            "You go for a job interview, and the manager looks down at his clipboard and makes a checkmark on a page of paper."
+        ],
+        "correct_answer": "You go for a job interview, and the manager greets you with a smile, a handshake, and says \"Good to meet you.\"",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 21,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 21,
+        "question": "In the following scenario, identify the listening barrier. You are having a conversation with a friend. She is explaining her feelings about a recent situation at work that has upset her. You are trying to pay close attention to the details of her story, but you have not eaten anything since breakfast and your stomach is growling.",
+        "options": [
+            "Physical noise",
+            "Semantic noise",
+            "Psychological noise",
+            "Physiological noise"
+        ],
+        "correct_answer": "Physiological noise",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 22,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Interpersonal Relationships",
+        "qno": 22,
+        "question": "For as long as you have known Pat and Dale they have been inseparable. Lately, you have seen Dale drinking coffee alone in the cafeteria. Dale rarely talks about adventures with Pat. From these observations you might conclude that Pat and Dale are in which stage of their relationship?",
+        "options": [
+            "Coming together",
+            "Waning friendship",
+            "Nascent friendship",
+            "Stabilized friendship"
+        ],
+        "correct_answer": "Waning friendship",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 23,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Foundations",
+        "qno": 23,
+        "question": "Xavier and Leigh are planning to buy a car. Xavier wants to save money and buy a used vehicle. Leigh considers the price and wants a new red convertible sports car. This scenario exhibits what type of conflict?",
+        "options": [
+            "Goal conflict",
+            "Value conflict",
+            "Affective conflict",
+            "Cognitive conflict"
+        ],
+        "correct_answer": "Goal conflict",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 24,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 24,
+        "question": "Suyin and Neil are friends who are just beginning to get to know one another. Suyin and Neil were raised in different cultures and are quickly learning that they each value the concept of time differently and have different words to describe the concept. Neil says to Suyin, \"I'll see you later.\" Suyin is confused and does not know whether \"later\" is that afternoon or tomorrow. This scenario is an example of which theory that affects interpersonal communication?",
+        "options": [
+            "Attribution Theory",
+            "Sapir-Whorf Hypothesis",
+            "The Interactional View",
+            "Elaboration of Likelihood Model"
+        ],
+        "correct_answer": "Sapir-Whorf Hypothesis",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 25,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 25,
+        "question": "Romantic relationships develop on a similar model as friendships. Which of the following characteristics influence our choice of partners in the development of romantic relationships?",
+        "options": [
+            "Eros, pathos, and mania",
+            "Intention, emotion, and temper",
+            "Physique, personality, and dress",
+            "Proximity, self-identity, and similarity to ourselves"
+        ],
+        "correct_answer": "Proximity, self-identity, and similarity to ourselves",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 26,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 26,
+        "question": "In the following scenario, identify the listening barrier. You are in class, and your instructor is presenting a lecture on a topic that is very interesting to you. Outside the window the marching band is practicing for the big tournament this weekend.",
+        "options": [
+            "Physical noise",
+            "Semantic noise",
+            "Psychological noise",
+            "Physiological noise"
+        ],
+        "correct_answer": "Physical noise",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 27,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 27,
+        "question": "An individual's perception of important goals and barriers is a requirement necessary to attain goals. Our perceptions are the key to the way we interact in groups and attain our life goals. These statements are true according to which theory of group communication?",
+        "options": [
+            "Groupthink",
+            "Field Theory",
+            "Attraction Theory",
+            "Social Influence Theory"
+        ],
+        "correct_answer": "Field Theory",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 28,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Group & Team Dynamics",
+        "qno": 28,
+        "question": "Fill in the blank. Members of _____________ groups meet in person to address group work.",
+        "options": [
+            "Virtual",
+            "Co-located",
+            "Management",
+            "Face-to-face"
+        ],
+        "correct_answer": "Face-to-face",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 29,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Group & Team Dynamics",
+        "qno": 29,
+        "question": "When people participate in groups, they take on one or more roles that contribute or distract from the functions of the group. The following behaviors describe which group role? This person uses the group as a place to discuss personal matters that are not relevant to the group or its goals.",
+        "options": [
+            "Blocker",
+            "Deserter",
+            "Confessor",
+            "Recognition seeker"
+        ],
+        "correct_answer": "Confessor",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 30,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Group & Team Dynamics",
+        "qno": 30,
+        "question": "Which communication theory seeks to answer the question \"why do people behave aggressively even when social norms and pressures frown on aggression\"?",
+        "options": [
+            "Groupthink",
+            "Field Theory",
+            "Attraction Theory",
+            "Social Influence Theory"
+        ],
+        "correct_answer": "Social Influence Theory",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 31,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Group & Team Dynamics",
+        "qno": 31,
+        "question": "When people participate in groups, they take on one or more roles that contribute or distract from the functions of the group. The following behaviors describe which group role? This person functions as a motivator, providing support and positive encouragement to the group.",
+        "options": [
+            "Clown",
+            "Blocker",
+            "Deserter",
+            "Energizer"
+        ],
+        "correct_answer": "Energizer",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 32,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Group & Team Dynamics",
+        "qno": 32,
+        "question": "When people participate in groups, they take on one or more roles that contribute or distract from the functions of the group. The following behaviors describe which group role? This person complains about insignificant concerns and blocks the group's progress by not letting them get on with their work.",
+        "options": [
+            "Blocker",
+            "Deserter",
+            "Recognition seeker",
+            "Self-interest pleader"
+        ],
+        "correct_answer": "Blocker",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 33,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Organizational Communication",
+        "qno": 33,
+        "question": "Which of the following is a characteristic of an organization?",
+        "options": [
+            "Chaos",
+            "Technology adept",
+            "One-way communication",
+            "Coordinated social unit"
+        ],
+        "correct_answer": "Coordinated social unit",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 34,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Organizational Communication",
+        "qno": 34,
+        "question": "Fill in the blank. Mary is the Human Resources Manager at your company. Mary sent an email to Penny, a newly hired employee, to explain how to use the company's time management system. This is an example of an e-mail transaction between two employees of an organization that is considered:",
+        "options": [
+            "formal",
+            "informal",
+            "summative",
+            "fraternization"
+        ],
+        "correct_answer": "formal",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 35,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Organizational Communication",
+        "qno": 35,
+        "question": "Which organizational communication theory describes power using terms such as authority, traditional, bureaucratic, and charismatic?",
+        "options": [
+            "Scanlon's Plan",
+            "McGregor's Theory X",
+            "Human Relations Theory",
+            "Classic-Bureaucratic Theory"
+        ],
+        "correct_answer": "Classic-Bureaucratic Theory",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 36,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Organizational Communication",
+        "qno": 36,
+        "question": "Which of the following is the informal unofficial, confidential chain of communication within an organization?",
+        "options": [
+            "Memos",
+            "Intranet",
+            "Grape vine",
+            "Performance review"
+        ],
+        "correct_answer": "Grape vine",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 37,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Organizational Communication",
+        "qno": 37,
+        "question": "Fill in the blank. Increases in the use of technology in the workplace coupled with increasing expectations for higher productivity from employees describes which of the following concepts?",
+        "options": [
+            "Employee engagement",
+            "Information overload",
+            "Systematic soldiering",
+            "Information amplification"
+        ],
+        "correct_answer": "Information overload",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 38,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 38,
+        "question": "Which of the following is an example of appropriate interpersonal communication between employees and supervisors within organizations?",
+        "options": [
+            "Constructive feedback",
+            "Systematic soldiering",
+            "Passive listening behaviors",
+            "Share gossip about coworkers"
+        ],
+        "correct_answer": "Constructive feedback",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 39,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Mass Communication & Media",
+        "qno": 39,
+        "question": "According to Marshal McLuhan's theory of mass communication, he predicted that the mass media and technology would come to affect not only our immediate community, but the world at large. What is the term that describes this phenomenon?",
+        "options": [
+            "Innovation",
+            "Equifinality",
+            "Global Village",
+            "Hypodermic Needle"
+        ],
+        "correct_answer": "Global Village",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 40,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Mass Communication & Media",
+        "qno": 40,
+        "question": "Individuals seek to satisfy their personal needs through the use of mass mediated messages, according to which mass communication theory?",
+        "options": [
+            "Cultivation",
+            "Reinforcement Approach",
+            "Uses and Gratification",
+            "Diffusion of Innovation"
+        ],
+        "correct_answer": "Uses and Gratification",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 41,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Mass Communication & Media",
+        "qno": 41,
+        "question": "Which theory of mass communication uses the metaphor of the farmer to describe the mass media's power to encourage or develop the audience's interest or concern about a particular topic?",
+        "options": [
+            "Cultivation",
+            "Reinforcement Approach",
+            "Uses and Gratification",
+            "Diffusion of Innovation"
+        ],
+        "correct_answer": "Cultivation",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 42,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Mass Communication & Media",
+        "qno": 42,
+        "question": "Fill in the blank. According to ___________ theory, persuasive attempts made through the mass media will reinforce existing attitudes.",
+        "options": [
+            "Cultivation",
+            "Reinforcement Approach",
+            "Uses and Gratification",
+            "Diffusion of Innovation"
+        ],
+        "correct_answer": "Reinforcement Approach",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 43,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 43,
+        "question": "Which of the following communication theories implies that individuals gather, create, and interpret their understanding of the world around them based on their interactions with information and events around them?",
+        "options": [
+            "Constructivism",
+            "Symbolic Interactionism",
+            "Elaboration of Likelihood Model",
+            "Coordinated Management of Meaning"
+        ],
+        "correct_answer": "Constructivism",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 44,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 44,
+        "question": "Which of the following statements is true about the Linear Model of Communication?",
+        "options": [
+            "The Linear Model of Communication is a mathematical equation.",
+            "The Linear Model of Communication is the same as the Transactional Model of Communication.",
+            "The Linear Model of Communication suggests that communication moves in only one direction.",
+            "The Linear Model of Communication suggests that the encoder and the decoder are one in the same person."
+        ],
+        "correct_answer": "The Linear Model of Communication suggests that communication moves in only one direction.",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 45,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Non-Verbal Communication",
+        "qno": 45,
+        "question": "Two friends meet on the street and shake hands in a sign of greeting. This is an example of which of the following type of communication?",
+        "options": [
+            "Haptics",
+            "Proxemics",
+            "Chronemics",
+            "Paralanguage"
+        ],
+        "correct_answer": "Haptics",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 46,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Non-Verbal Communication",
+        "qno": 46,
+        "question": "Which of the following terms may be defined as vocal qualities such as pitch, volume, inflection, rate of speech, and rhythm?",
+        "options": [
+            "Haptics",
+            "Proxemics",
+            "Chronemics",
+            "Paralanguage"
+        ],
+        "correct_answer": "Paralanguage",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 47,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 47,
+        "question": "Which communication theory or model observes that as individuals develop relationships with others, they communicate from superficial topics to more deeply personal topics?",
+        "options": [
+            "Constructivism",
+            "Symbolic Interactionism",
+            "Social Penetration Theory",
+            "Coordinated Management of Meaning"
+        ],
+        "correct_answer": "Social Penetration Theory",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 48,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Culture, Gender & Identity",
+        "qno": 48,
+        "question": "Which of the following is an example of gender-neutral language?",
+        "options": [
+            "Mother",
+            "Fireman",
+            "Chairman",
+            "Letter carrier"
+        ],
+        "correct_answer": "Letter carrier",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 49,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Organizational Communication",
+        "qno": 49,
+        "question": "The perception process consists of three stages. Which of the following gives the correct sequence of the three stages?",
+        "options": [
+            "Interpretation, organization, selection",
+            "Organization, interpretation, selection",
+            "Selection, organization, interpretation",
+            "Communication, selection, interpretation"
+        ],
+        "correct_answer": "Selection, organization, interpretation",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 50,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 50,
+        "question": "Which component of the communication model is composed of symbols and their meaning?",
+        "options": [
+            "Noise",
+            "Sender",
+            "Channel",
+            "Message"
+        ],
+        "correct_answer": "Message",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 51,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Foundations",
+        "qno": 51,
+        "question": "Which of the following paradigms of communication theory maintains that we follow shared rules of communication, rather than strict laws?",
+        "options": [
+            "Systems",
+            "Rhetoric",
+            "Empiricism",
+            "Human rules"
+        ],
+        "correct_answer": "Human rules",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 52,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Foundations",
+        "qno": 52,
+        "question": "Which of the following terms may be defined as \"any kind of human symbol use that functions in any realm - public, private, or anything in between\"?",
+        "options": [
+            "Literacy",
+            "Rhetoric",
+            "Semantics",
+            "Communication"
+        ],
+        "correct_answer": "Rhetoric",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 53,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 53,
+        "question": "Which communication theory or model attempts to determine the reasons why people do what they do?",
+        "options": [
+            "Attribution Theory",
+            "Symbolic Interactionism",
+            "Elaboration of Likelihood Model",
+            "Coordinated Management of Meaning"
+        ],
+        "correct_answer": "Attribution Theory",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 54,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 54,
+        "question": "A response of the receiver to the sender is known as which of the following?",
+        "options": [
+            "Feedback",
+            "External noise",
+            "Internal noise",
+            "Semantic noise"
+        ],
+        "correct_answer": "Feedback",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 55,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 55,
+        "question": "Which of the following statements about listening is false?",
+        "options": [
+            "Listening is an act of perception.",
+            "Listening and hearing are the same concepts.",
+            "Listening is based on our personal assumptions about a situation.",
+            "In listening, we attend to certain pieces of information and choose to ignore other pieces of information."
+        ],
+        "correct_answer": "Listening and hearing are the same concepts.",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 56,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 56,
+        "question": "In the following scenario, identify the listening barrier. You are in a biology class, and your instructor is using terminology that is new to you. You did not study the chapters for today's lecture; the new terms all sound foreign to you.",
+        "options": [
+            "Physical noise",
+            "Semantic noise",
+            "Psychological noise",
+            "Physiological noise"
+        ],
+        "correct_answer": "Semantic noise",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 57,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 57,
+        "question": "There are many models for the development of relationships, for example friendships. These models share a similar pattern of development from initiation to termination. Which stage of relationship development is characterized as one in which friends take each other for granted as friends, but not in a negative way?",
+        "options": [
+            "Maintenance",
+            "Nascent friendship",
+            "Stabilized friendship",
+            "Role-limited interaction"
+        ],
+        "correct_answer": "Stabilized friendship",
+        "correct_letter": "C",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 58,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Foundations",
+        "qno": 58,
+        "question": "There are many strategies to becoming a better listener. Sarah and Sasha are good friends. They are talking while watching their favorite television program. Sasha says to Sarah, \"I must go home. I will meet you at school tomorrow at 9 a.m.\" Sarah nods her head as she laughs at the amusing television program. The next day, Sarah arrives at school at noon. Which of the following is an appropriate strategy for Sarah to become a better listener?",
+        "options": [
+            "Take notes.",
+            "Set aside personal biases.",
+            "Ask open-ended questions for clarification.",
+            "Remove distractions that might reduce your attention span."
+        ],
+        "correct_answer": "Remove distractions that might reduce your attention span.",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 59,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 59,
+        "question": "In the Johari Window model of self-disclosure, the Blind Self includes things that:",
+        "options": [
+            "are known by you and known by others.",
+            "are known by you but not known to others.",
+            "you do not know about yourself, nor do others know about you.",
+            "you do not know about yourself, but which others know about you."
+        ],
+        "correct_answer": "you do not know about yourself, but which others know about you.",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 60,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Models & Paradigms",
+        "qno": 60,
+        "question": "There are many models for the development of relationships, for example friendships. These models share a similar pattern of development from initiation to termination. Which stage of relationship development is characterized by communication that moves beyond initial roles as the participants begin to interact with one another to see if there are common interests, as well as an interest to continue getting to know about one another?",
+        "options": [
+            "Coming together",
+            "Friendly relations",
+            "Nascent friendship",
+            "Role-limited interaction"
+        ],
+        "correct_answer": "Friendly relations",
+        "correct_letter": "B",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 61,
+        "subject_id": "phc",
+        "mst_type": "mst-1",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Listening & Noise",
+        "qno": 61,
+        "question": "There are a number of ways to improve your listening skills. Pat and Dale are new business associates who have just met at a company luncheon. Pat shakes Dale's hand and says, \"I'm very happy to meet you. What division of the company are you with?\" This interaction is an example of which method for improving your listening skills?",
+        "options": [
+            "Taking notes",
+            "Changing the topic of conversation",
+            "Maintaining comfortable eye contact",
+            "Developing a genuine interest in the other person"
+        ],
+        "correct_answer": "Developing a genuine interest in the other person",
+        "correct_letter": "D",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    },
+    {
+        "id": 62,
+        "subject_id": "phc",
+        "mst_type": "mst-2",
+        "source_set": "Saylor COMM001 Core Exam",
+        "topic": "Group & Team Dynamics",
+        "qno": 62,
+        "question": "In which stage of group development do members of the group come together for the first time?",
+        "options": [
+            "Forming",
+            "Norming",
+            "Storming",
+            "Performing"
+        ],
+        "correct_answer": "Forming",
+        "correct_letter": "A",
+        "explanation": null,
+        "difficulty": "Medium",
+        "created_at": "2026-08-23T06:39:43.342062+00:00"
+    }
+]

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principles of Human Communication</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Starry background -->
+    <div id="stars-container"></div>
+    
+    <div id="app">
+      <header class="header">
+        <div class="logo">PRINCIPLES_OF_HUMAN_COMMUNICATION</div>
+        <div class="header-right">
+          <div class="score-display">SCORE: <span id="score">0</span></div>
+          <button id="mobile-menu-btn" class="mobile-only btn small-btn">☰</button>
+        </div>
+      </header>
+
+      <main class="quiz-container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+          <h1>COMM_EXAM</h1>
+          <p>PRINCIPLES OF HUMAN COMMUNICATION</p>
+          <button id="start-btn" class="btn primary-btn">START_SEQUENCE <span class="arrow">→</span></button>
+        </div>
+
+        <!-- Main Quiz Layout -->
+        <div id="quiz-screen" class="screen layout-grid">
+          <!-- Left Navigation -->
+          <aside class="sidebar left-sidebar" id="left-sidebar">
+            <div class="sidebar-header">
+              <span>NAVIGATOR</span>
+              <button id="close-nav-btn" class="mobile-only btn small-btn ghost-btn">✕</button>
+            </div>
+            
+            <div class="nav-pagination">
+              <button id="nav-prev" class="nav-arrow btn ghost-btn">&lt;</button>
+              <span id="nav-page-info">1 / 15</span>
+              <button id="nav-next" class="nav-arrow btn ghost-btn">&gt;</button>
+            </div>
+            
+            <div id="question-nav" class="nav-grid">
+              <!-- Nav items injected here -->
+            </div>
+          </aside>
+
+          <!-- Middle Content -->
+          <section class="main-content">
+            <div class="progress-bar">
+              <div id="progress" class="progress-fill"></div>
+            </div>
+            
+            <div class="question-meta">
+              <span id="question-number">Q 1/X</span>
+              <span class="timer-display" id="quiz-timer">00:00</span>
+            </div>
+            
+            <div class="question-header">
+              <h2 id="question-text" class="question-text">Loading question...</h2>
+            </div>
+
+            <div id="options-container" class="options-grid">
+              <!-- Options -->
+            </div>
+            
+            <div class="controls">
+              <button id="prev-btn" class="btn small-btn">&lt; PREV</button>
+              <button id="next-btn" class="btn small-btn">NEXT &gt;</button>
+            </div>
+          </section>
+
+          <!-- Right Sidebar (Stats & Actions) -->
+          <aside class="sidebar right-sidebar">
+            <div class="sidebar-header">TELEMETRY</div>
+            <div class="stats-box">
+              <div class="stat-row"><span>DONE:</span> <span id="stat-done">0</span></div>
+              <div class="stat-row"><span>REMAINING:</span> <span id="stat-rem">0</span></div>
+            </div>
+            <div class="actions-box">
+              <button id="review-btn" class="btn action-btn">MARK_FOR_REVIEW</button>
+              <button id="shuffle-btn" class="btn action-btn">SHUFFLE_ALL</button>
+              <button id="submit-btn" class="btn action-btn finish-btn">SUBMIT_EXAM</button>
+            </div>
+          </aside>
+        </div>
+
+        <!-- End Screen / Results -->
+        <div id="end-screen" class="screen">
+          <div class="results-card">
+            
+            <div class="circular-progress">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring__circle-bg" stroke="rgba(255,255,255,0.1)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                <circle class="progress-ring__circle" id="progress-circle" stroke="var(--accent)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+              </svg>
+              <div class="progress-text" id="final-percentage">0%</div>
+            </div>
+            
+            <h2 id="result-title">Good effort</h2>
+            <p id="result-subtitle">You need 80% or above to pass.</p>
+            
+            <div class="time-taken">
+              <span class="time-icon">⏱</span> <span id="final-time">00:00</span>
+            </div>
+            
+            <div class="metrics-grid">
+              <div class="metric-card mistakes">
+                <div class="metric-value" id="final-mistakes">0</div>
+                <div class="metric-label">× Mistakes</div>
+              </div>
+              <div class="metric-card correct">
+                <div class="metric-value" id="final-correct">0</div>
+                <div class="metric-label">✓ Correct</div>
+              </div>
+            </div>
+
+            <div class="result-actions">
+              <button id="restart-btn" class="btn primary-btn btn-block">Review lessons</button>
+              <button id="retry-btn" class="btn ghost-btn btn-block">↻ Retry</button>
+            </div>
+            
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
