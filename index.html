@@ -185,6 +185,7 @@
             <div class="actions-box">
               <button id="review-btn" class="btn action-btn">MARK_FOR_REVIEW</button>
               <button id="shuffle-btn" class="btn action-btn">SHUFFLE_ALL</button>
+              <button id="view-all-btn" class="btn action-btn">VIEW_ALL_QUESTIONS</button>
               <button id="submit-btn" class="btn action-btn finish-btn">SUBMIT_EXAM</button>
             </div>
           </aside>
@@ -230,7 +231,19 @@
           </div>
         </div>
       </div>
+      <!-- View All Questions Screen -->
+      <div id="view-all-screen" class="screen">
+        <div class="view-all-container">
+          <div class="view-all-header">
+            <h2>All Questions Reference</h2>
+            <button id="close-view-all-btn" class="btn ghost-btn">Close (Back to Hub)</button>
+          </div>
+          <div id="questions-list-container" class="questions-list">
+            <!-- Questions injected here via JS -->
+          </div>
+        </div>
+      </div>
     </div>
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./main.jsx"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 import { questions as originalQuestions } from './questions.js';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import DitherHero from './DitherHero.jsx';
+import DitherHero from './src/DitherHero.jsx';
 
 // Mount React Component
 const ditherRoot = document.getElementById('dither-root');
@@ -26,7 +26,8 @@ const navItemsPerPage = 40;
 const screens = {
   start: document.getElementById('start-screen'),
   quiz: document.getElementById('quiz-screen'),
-  end: document.getElementById('end-screen')
+  end: document.getElementById('end-screen'),
+  viewAll: document.getElementById('view-all-screen')
 };
 
 const elements = {
@@ -56,7 +57,12 @@ const elements = {
   statRem: document.getElementById('stat-rem'),
   reviewBtn: document.getElementById('review-btn'),
   shuffleBtn: document.getElementById('shuffle-btn'),
+  viewAllBtn: document.getElementById('view-all-btn'),
   submitBtn: document.getElementById('submit-btn'),
+  
+  // View All Screen
+  closeViewAllBtn: document.getElementById('close-view-all-btn'),
+  questionsListContainer: document.getElementById('questions-list-container'),
   
   // End Screen elements
   progressCircle: document.getElementById('progress-circle'),
@@ -106,10 +112,52 @@ function showScreen(screenName) {
   });
   screens[screenName].classList.add('active');
   
-  if (screenName === 'quiz' || screenName === 'end') {
+  if (screenName === 'quiz' || screenName === 'end' || screenName === 'viewAll') {
     elements.dashboardHeader.style.display = 'flex';
   } else {
     elements.dashboardHeader.style.display = 'none';
+  }
+}
+
+// View All Logic
+let viewAllLoadedCount = 0;
+const viewAllLoadAmount = 100;
+
+function showViewAllScreen() {
+  showScreen('viewAll');
+  if (viewAllLoadedCount === 0) {
+    elements.questionsListContainer.innerHTML = '';
+    loadMoreViewAll();
+  }
+}
+
+function loadMoreViewAll() {
+  const startIndex = viewAllLoadedCount;
+  const endIndex = Math.min(startIndex + viewAllLoadAmount, originalQuestions.length);
+  
+  for(let i = startIndex; i < endIndex; i++) {
+    const q = originalQuestions[i];
+    const qDiv = document.createElement('div');
+    qDiv.className = 'view-all-item';
+    qDiv.innerHTML = `
+      <div class="view-all-qno">Q ${i + 1}</div>
+      <div class="view-all-qtext">${q.question}</div>
+      <div class="view-all-answer"><strong>Correct Answer:</strong> ${q.correct_answer}</div>
+    `;
+    elements.questionsListContainer.appendChild(qDiv);
+  }
+  
+  viewAllLoadedCount = endIndex;
+  
+  if (viewAllLoadedCount < originalQuestions.length) {
+    const loadMoreBtn = document.createElement('button');
+    loadMoreBtn.className = 'btn ghost-btn btn-block';
+    loadMoreBtn.textContent = 'Load More...';
+    loadMoreBtn.onclick = () => {
+      loadMoreBtn.remove();
+      loadMoreViewAll();
+    };
+    elements.questionsListContainer.appendChild(loadMoreBtn);
   }
 }
 
@@ -398,6 +446,9 @@ elements.shuffleBtn.addEventListener('click', () => {
     loadQuestion(0);
   }
 });
+
+elements.viewAllBtn.addEventListener('click', showViewAllScreen);
+elements.closeViewAllBtn.addEventListener('click', () => showScreen('quiz'));
 
 elements.submitBtn.addEventListener('click', () => {
   endQuiz();
