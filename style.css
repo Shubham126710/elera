@@ -34,25 +34,6 @@ body {
   position: relative;
 }
 
-/* Starry Background */
-#stars-container {
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-.star {
-  position: absolute;
-  background-color: #ffffff;
-  border-radius: 50%;
-  animation: twinkle infinite alternate ease-in-out;
-}
-@keyframes twinkle {
-  0% { opacity: 0.1; transform: scale(0.8); }
-  100% { opacity: 0.8; transform: scale(1.2); }
-}
-
 #app {
   width: 100%;
   max-width: 1400px;

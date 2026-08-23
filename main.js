@@ -62,23 +62,6 @@ const elements = {
   startBtn: document.getElementById('start-btn'),
 };
 
-// Generate Stars Background
-function generateStars() {
-  const container = document.getElementById('stars-container');
-  container.innerHTML = '';
-  for (let i = 0; i < 150; i++) {
-    const star = document.createElement('div');
-    star.className = 'star';
-    star.style.width = Math.random() * 3 + 'px';
-    star.style.height = star.style.width;
-    star.style.left = Math.random() * 100 + '%';
-    star.style.top = Math.random() * 100 + '%';
-    star.style.animationDuration = (Math.random() * 3 + 1) + 's';
-    star.style.animationDelay = Math.random() * 2 + 's';
-    container.appendChild(star);
-  }
-}
-
 // Utility to shuffle array
 function shuffleArray(array) {
   const newArr = [...array];
@@ -348,8 +331,6 @@ function endQuiz() {
 }
 
 // Initialization
-generateStars();
-
 // Event Listeners
 elements.startBtn.addEventListener('click', startQuiz);
 elements.restartBtn.addEventListener('click', startQuiz); 
@@ -380,14 +361,7 @@ elements.shuffleBtn.addEventListener('click', () => {
 });
 
 elements.submitBtn.addEventListener('click', () => {
-  const remCount = currentQuestions.length - Object.keys(answers).length;
-  if (remCount > 0) {
-    if (confirm(`YOU STILL HAVE ${remCount} UNANSWERED QUESTIONS. SUBMIT ANYWAY?`)) {
-      endQuiz();
-    }
-  } else {
-    endQuiz();
-  }
+  endQuiz();
 });
 
 // Pagination event listeners
