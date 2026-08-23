@@ -25,6 +25,7 @@
           <div class="nav-links">
             <a href="#hero">About</a>
             <a href="#syllabus">Syllabus</a>
+            <a href="#" id="nav-answer-key">Answer Key</a>
             <a href="#">Contact</a>
           </div>
           <div class="nav-auth">
@@ -53,7 +54,6 @@
           <div class="bento-grid">
             
             <div class="bento-card span-2">
-              <div class="card-icon">📚</div>
               <h3>Unit 1: Foundations</h3>
               <p class="card-desc">Master the core concepts of communication.</p>
               <ul>
@@ -65,8 +65,7 @@
               </ul>
             </div>
 
-            <div class="bento-card">
-              <div class="card-icon">🤝</div>
+            <div class="bento-card span-2">
               <h3>Unit 2: Interpersonal</h3>
               <p class="card-desc">Deepen your understanding of dyadic relationships.</p>
               <ul>
@@ -76,8 +75,7 @@
               </ul>
             </div>
 
-            <div class="bento-card">
-              <div class="card-icon">👥</div>
+            <div class="bento-card span-2">
               <h3>Unit 3: Small Group</h3>
               <p class="card-desc">Navigate team dynamics and roles.</p>
               <ul>
@@ -87,8 +85,7 @@
               </ul>
             </div>
 
-            <div class="bento-card span-2">
-              <div class="card-icon">🏢</div>
+            <div class="bento-card span-3">
               <h3>Unit 4: Organizational</h3>
               <p class="card-desc">Explore workplace communication.</p>
               <ul>
@@ -97,8 +94,7 @@
               </ul>
             </div>
 
-            <div class="bento-card">
-              <div class="card-icon">📺</div>
+            <div class="bento-card span-3">
               <h3>Unit 5: Mass Media</h3>
               <p class="card-desc">Mass media evolution and theories.</p>
               <ul>
@@ -185,7 +181,6 @@
             <div class="actions-box">
               <button id="review-btn" class="btn action-btn">MARK_FOR_REVIEW</button>
               <button id="shuffle-btn" class="btn action-btn">SHUFFLE_ALL</button>
-              <button id="view-all-btn" class="btn action-btn">VIEW_ALL_QUESTIONS</button>
               <button id="submit-btn" class="btn action-btn finish-btn">SUBMIT_EXAM</button>
             </div>
           </aside>
@@ -219,13 +214,14 @@
               </div>
               <div class="metric-card correct">
                 <div class="metric-value" id="final-correct">0</div>
-                <div class="metric-label">✓ Correct</div>
+                <div class="metric-label">Correct</div>
               </div>
             </div>
 
-            <div class="result-actions">
-              <button id="restart-btn" class="btn primary-btn btn-block">Review lessons</button>
-              <button id="retry-btn" class="btn ghost-btn btn-block">↻ Retry</button>
+            <div class="results-actions">
+              <button id="restart-btn" class="btn primary-btn btn-block">REVIEW LESSONS</button>
+              <button id="retry-btn" class="btn ghost-btn btn-block">RETRY</button>
+              <button id="results-view-all-btn" class="btn action-btn btn-block" style="margin-top: 1rem;">VIEW ANSWER KEY</button>
             </div>
             
           </div>

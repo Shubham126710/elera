@@ -57,10 +57,11 @@ const elements = {
   statRem: document.getElementById('stat-rem'),
   reviewBtn: document.getElementById('review-btn'),
   shuffleBtn: document.getElementById('shuffle-btn'),
-  viewAllBtn: document.getElementById('view-all-btn'),
   submitBtn: document.getElementById('submit-btn'),
   
   // View All Screen
+  navAnswerKey: document.getElementById('nav-answer-key'),
+  resultsViewAllBtn: document.getElementById('results-view-all-btn'),
   closeViewAllBtn: document.getElementById('close-view-all-btn'),
   questionsListContainer: document.getElementById('questions-list-container'),
   
@@ -122,8 +123,10 @@ function showScreen(screenName) {
 // View All Logic
 let viewAllLoadedCount = 0;
 const viewAllLoadAmount = 100;
+let previousScreenForViewAll = 'start';
 
-function showViewAllScreen() {
+function showViewAllScreen(sourceScreen) {
+  previousScreenForViewAll = sourceScreen || 'start';
   showScreen('viewAll');
   if (viewAllLoadedCount === 0) {
     elements.questionsListContainer.innerHTML = '';
@@ -447,8 +450,19 @@ elements.shuffleBtn.addEventListener('click', () => {
   }
 });
 
-elements.viewAllBtn.addEventListener('click', showViewAllScreen);
-elements.closeViewAllBtn.addEventListener('click', () => showScreen('quiz'));
+if (elements.navAnswerKey) {
+  elements.navAnswerKey.addEventListener('click', (e) => {
+    e.preventDefault();
+    showViewAllScreen('start');
+  });
+}
+if (elements.resultsViewAllBtn) {
+  elements.resultsViewAllBtn.addEventListener('click', () => showViewAllScreen('end'));
+}
+
+elements.closeViewAllBtn.addEventListener('click', () => {
+  showScreen(previousScreenForViewAll);
+});
 
 elements.submitBtn.addEventListener('click', () => {
   endQuiz();

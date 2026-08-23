@@ -295,7 +295,7 @@ body {
 }
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -315,6 +315,9 @@ body {
 }
 .bento-card.span-2 {
   grid-column: span 2;
+}
+.bento-card.span-3 {
+  grid-column: span 3;
 }
 .card-icon {
   font-size: 1.5rem;
@@ -678,7 +681,8 @@ body {
   .bento-grid {
     grid-template-columns: 1fr;
   }
-  .bento-card.span-2 {
+  .bento-card.span-2,
+  .bento-card.span-3 {
     grid-column: span 1;
   }
   .split-list {
@@ -746,7 +750,6 @@ body {
 ------------------------------------------- */
 #view-all-screen {
   flex: 1;
-  display: flex;
   justify-content: center;
   padding: 2rem;
   overflow-y: auto;
