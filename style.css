@@ -861,29 +861,50 @@ body {
 .subject-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 2.5rem;
-  text-align: center;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: left;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 .subject-card:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--accent);
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.2);
   transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
-.subject-icon {
-  font-size: 3rem;
+.subject-number {
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.1);
+  line-height: 1;
+  font-family: var(--font-mono);
+  transition: color 0.3s;
 }
-.subject-card h3 {
-  font-size: 1.2rem;
+.subject-card:hover .subject-number {
+  color: rgba(255,255,255,0.8);
+}
+.subject-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.subject-content h3 {
+  font-size: 1.3rem;
   font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--text-main);
+  line-height: 1.2;
 }
-.subject-card p {
+.subject-content p {
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
