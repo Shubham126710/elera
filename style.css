@@ -203,14 +203,22 @@ body {
 
 /* Hero Section */
 .hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  padding: 10rem 4rem 6rem;
+  padding: 12rem 4rem 8rem;
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   align-items: center;
-  min-height: 80vh;
+  flex: 1;
 }
 .hero-content {
   display: flex;
@@ -808,9 +816,9 @@ body {
    RESPONSIVE DESIGN
 ------------------------------------------- */
 @media (max-width: 1024px) {
-  .hero-section {
+  .hero-container {
     grid-template-columns: 1fr;
-    padding: 4rem 2rem;
+    padding: 8rem 2rem 4rem;
   }
   .bento-grid {
     grid-template-columns: 1fr;
@@ -965,7 +973,9 @@ body {
    HERO TICKER
 ------------------------------------------- */
 .hero-ticker {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   padding: 1.5rem 0;
   overflow: hidden;

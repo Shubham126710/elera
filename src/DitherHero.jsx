@@ -73,20 +73,20 @@ function BookStack({ color, bgColor }) {
   const group = useRef();
   const books = useMemo(() => {
     const temp = [];
-    const count = 12;
-    let currentHeight = -2.5;
+    const count = 18; // Increased count
+    let currentHeight = -3.5;
     
     for(let i=0; i<count; i++) {
         const thickness = 0.3 + Math.random() * 0.4;
-        const width = 3.5 + Math.random() * 1.5;
-        const depth = 5 + Math.random() * 1.5;
+        const width = 4.0 + Math.random() * 2.0;
+        const depth = 5.5 + Math.random() * 2.0;
         
         // Randomize position slightly for "messy stack" look
-        const offsetX = (Math.random() - 0.5) * 1.0;
-        const offsetZ = (Math.random() - 0.5) * 1.0;
+        const offsetX = (Math.random() - 0.5) * 1.5;
+        const offsetZ = (Math.random() - 0.5) * 1.5;
         
         // Randomize rotation
-        const rotY = (Math.random() - 0.5) * Math.PI * 0.6;
+        const rotY = (Math.random() - 0.5) * Math.PI * 0.8;
 
         temp.push({
             position: [offsetX, currentHeight + thickness / 2, offsetZ],
@@ -95,6 +95,20 @@ function BookStack({ color, bgColor }) {
         });
         currentHeight += thickness;
     }
+    
+    // Add some floating abstract shapes around the stack
+    for(let j=0; j<5; j++) {
+        temp.push({
+            position: [
+                (Math.random() - 0.5) * 12,
+                (Math.random() - 0.5) * 10,
+                (Math.random() - 0.5) * 12
+            ],
+            rotation: [Math.random() * Math.PI, Math.random() * Math.PI, 0],
+            scale: [1 + Math.random(), 1 + Math.random(), 1 + Math.random()]
+        });
+    }
+    
     return temp;
   }, []);
 
@@ -123,7 +137,7 @@ function BookStack({ color, bgColor }) {
 export default function DitherHero({ color = '#ffffff', backgroundColor = '#0a0a0a', position = [0, 0, 0] }) {
   return (
     <div style={{ width: '100%', height: '100%' }}>
-      <Canvas orthographic camera={{ zoom: 22, position: [20, 20, 20] }} gl={{ alpha: true }}>
+      <Canvas orthographic camera={{ zoom: 12, position: [20, 20, 20] }} gl={{ alpha: true }}>
         <group position={position}>
             <BookStack color={color} bgColor={backgroundColor} />
         </group>
