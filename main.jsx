@@ -18,6 +18,7 @@ let reviews = new Set(); // set of question.id
 let optionsOrder = {}; // question.id -> array of options
 let startTime = 0;
 let timerInterval = null;
+let highScore = parseInt(localStorage.getItem('eleraHighScore') || '0', 10);
 
 // Pagination state
 let navCurrentPage = 1;
@@ -58,6 +59,9 @@ const elements = {
   statDone: document.getElementById('stat-done'),
   statRem: document.getElementById('stat-rem'),
   reviewBtn: document.getElementById('review-btn'),
+  liveCorrect: document.getElementById('live-correct'),
+  liveWrong: document.getElementById('live-wrong'),
+  highScoreDisplay: document.getElementById('high-score-display'),
   shuffleBtn: document.getElementById('shuffle-btn'),
   submitBtn: document.getElementById('submit-btn'),
   
@@ -308,12 +312,22 @@ function updateStats() {
   elements.statDone.textContent = doneCount;
   elements.statRem.textContent = remCount;
   
-  // Calculate score (each correct answer is 100 points)
+  // Calculate score (+4 for correct, -1 for wrong)
   let currentScore = 0;
+  let correct = 0;
+  let wrong = 0;
   Object.values(answers).forEach(ans => {
-    if (ans.isCorrect) currentScore += 100;
+    if (ans.isCorrect) {
+        currentScore += 4;
+        correct++;
+    } else {
+        currentScore -= 1;
+        wrong++;
+    }
   });
   elements.scoreDisplay.textContent = currentScore;
+  if (elements.liveCorrect) elements.liveCorrect.textContent = correct;
+  if (elements.liveWrong) elements.liveWrong.textContent = wrong;
   
   // Progress bar based on questions answered
   const progressPercent = (doneCount / currentQuestions.length) * 100;
@@ -434,11 +448,19 @@ function endQuiz() {
     elements.resultSubtitle.textContent = "You need 80% or above to pass. Review the lessons.";
   }
 
+  // Update High Score
+  let currentScore = parseInt(elements.scoreDisplay.textContent, 10) || 0;
+  if (currentScore > highScore) {
+    highScore = currentScore;
+    localStorage.setItem('eleraHighScore', highScore.toString());
+  }
+
   showScreen('end');
 }
 
 // Start Exam Buttons -> Subject Screen
 function showSubjectScreen() {
+  if (elements.highScoreDisplay) elements.highScoreDisplay.textContent = highScore;
   showScreen('subject');
 }
 
@@ -484,13 +506,31 @@ if (elements.answerKeySubject) {
 
 // Initialization
 window.addEventListener('load', () => {
+  const quotes = [
+    "Knowledge is power.",
+    "Learning never exhausts the mind.",
+    "The beautiful thing about learning is that no one can take it away from you.",
+    "Education is the most powerful weapon.",
+    "An investment in knowledge pays the best interest."
+  ];
+  let qIdx = 0;
+  const loaderQuote = document.getElementById('loader-quote');
+  
+  const quoteInterval = setInterval(() => {
+    if(loaderQuote) {
+        qIdx = (qIdx + 1) % quotes.length;
+        loaderQuote.textContent = `"${quotes[qIdx]}"`;
+    }
+  }, 1000);
+  
   setTimeout(() => {
+    clearInterval(quoteInterval);
     const loader = document.getElementById('global-loader');
     if (loader) {
       loader.classList.add('hidden');
       setTimeout(() => loader.remove(), 800);
     }
-  }, 600); // slight delay for premium feel
+  }, 3500); // Extended delay to show rotating quotes
 });
 
 // Dynamic Hero Text (Typewriter Effect)

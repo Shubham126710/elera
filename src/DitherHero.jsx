@@ -1,7 +1,7 @@
 import React, { useRef, useMemo } from 'react';
 import { Canvas, useFrame, extend } from '@react-three/fiber';
 import * as THREE from 'three';
-import { shaderMaterial, Text3D } from '@react-three/drei';
+import { shaderMaterial } from '@react-three/drei';
 
 // --- 1. Dither Shader Material ---
 const DitherMaterial = shaderMaterial(
@@ -96,21 +96,6 @@ function BookStack({ color, bgColor }) {
         currentHeight += thickness;
     }
     
-    // Add floating text shapes
-    for(let j=0; j<8; j++) {
-        temp.push({
-            isText: true,
-            text: Math.random() > 0.5 ? '?' : '!',
-            position: [
-                (Math.random() - 0.5) * 8, // reduced scatter range
-                (Math.random() - 0.5) * 8,
-                (Math.random() - 0.5) * 4 
-            ],
-            rotation: [Math.random() * 0.2, (Math.random() - 0.5) * Math.PI, 0],
-            scale: 2 + Math.random() * 2
-        });
-    }
-    
     return temp;
   }, []);
 
@@ -126,25 +111,10 @@ function BookStack({ color, bgColor }) {
   return (
     <group ref={group}>
         {books.map((b, i) => (
-            b.isText ? (
-                <Text3D 
-                  key={i} 
-                  font="https://threejs.org/examples/fonts/helvetiker_regular.typeface.json"
-                  position={b.position} 
-                  rotation={b.rotation} 
-                  size={b.scale}
-                  height={0.5}
-                  curveSegments={12}
-                >
-                    {b.text}
-                    <ditherMaterial attach="material" uColor={new THREE.Color(color)} uBgColor={new THREE.Color(bgColor)} />
-                </Text3D>
-            ) : (
-                <mesh key={i} position={b.position} rotation={b.rotation}>
-                    <boxGeometry args={b.scale} />
-                    <ditherMaterial uColor={new THREE.Color(color)} uBgColor={new THREE.Color(bgColor)} />
-                </mesh>
-            )
+            <mesh key={i} position={b.position} rotation={b.rotation}>
+                <boxGeometry args={b.scale} />
+                <ditherMaterial uColor={new THREE.Color(color)} uBgColor={new THREE.Color(bgColor)} />
+            </mesh>
         ))}
     </group>
   );
@@ -154,7 +124,7 @@ function BookStack({ color, bgColor }) {
 export default function DitherHero({ color = '#ffffff', backgroundColor = '#0a0a0a', position = [0, 0, 0] }) {
   return (
     <div style={{ width: '100%', height: '100%' }}>
-      <Canvas orthographic camera={{ zoom: 15, position: [20, 20, 20] }} gl={{ alpha: true }}>
+      <Canvas orthographic camera={{ zoom: 24, position: [20, 20, 20] }} gl={{ alpha: true }}>
         <group position={position}>
             <BookStack color={color} bgColor={backgroundColor} />
         </group>

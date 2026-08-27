@@ -14,8 +14,11 @@
     <div id="global-loader" class="global-loader">
       <div class="loader-content">
         <div class="loader-logo">elera.</div>
-        <div class="loader-bar">
-          <div class="loader-progress"></div>
+        <div class="loader-quote-container">
+          <p id="loader-quote">"Knowledge is power."</p>
+        </div>
+        <div class="loader-bar-container">
+          <div class="loader-bar"></div>
         </div>
       </div>
     </div>
@@ -191,19 +194,26 @@
         </div>
         <div id="greeting-msg" class="greeting-text"></div>
         <div class="header-right">
+          <div class="live-stats-badge" style="display: flex; gap: 1rem; color: var(--text-muted); font-size: 0.9rem; align-items: center; margin-right: 1rem;">
+            <span style="color: #4ade80; font-weight: bold;">✔ <span id="live-correct">0</span></span>
+            <span style="color: #f87171; font-weight: bold;">✘ <span id="live-wrong">0</span></span>
+          </div>
           <div class="score-display">SCORE: <span id="score">0</span></div>
           <button id="mobile-menu-btn" class="mobile-only btn small-btn">☰</button>
         </div>
       </header>
 
-      <!-- Subject Selection Screen -->
-      <div id="subject-screen" class="screen">
-        <header class="header">
+      <!-- Dashboard Screen -->
+      <div id="dashboard-screen" class="screen">
+        <div class="header">
           <div class="logo-container">
             <div class="logo">elera.</div>
           </div>
-          <button id="subject-back-btn" class="btn ghost-btn small-btn">Back</button>
-        </header>
+          <div class="header-right">
+            <span class="greeting-text mobile-hide" id="greeting-text">Welcome back, Scholar</span>
+            <span class="score-display">High Score: <span id="high-score-display">0</span></span>
+          </div>
+        </div>
         <div class="subject-container">
           <h2 class="subject-title">Select Subject</h2>
           <div class="subject-grid">
