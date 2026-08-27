@@ -493,19 +493,42 @@ window.addEventListener('load', () => {
   }, 600); // slight delay for premium feel
 });
 
-// Dynamic Hero Text
-const dynamicWords = ["quiz prep", "learning", "research", "exam prep"];
-let dynamicIndex = 0;
+// Dynamic Hero Text (Typewriter Effect)
+const dynamicWords = ["quiz prep.", "learning.", "research.", "exam prep."];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 const dynamicTextEl = document.getElementById('dynamic-text');
+
+function typeWriter() {
+  if (!dynamicTextEl) return;
+  const currentWord = dynamicWords[wordIndex];
+  
+  if (isDeleting) {
+    dynamicTextEl.textContent = currentWord.substring(0, charIndex - 1);
+    charIndex--;
+  } else {
+    dynamicTextEl.textContent = currentWord.substring(0, charIndex + 1);
+    charIndex++;
+  }
+  
+  let typingSpeed = isDeleting ? 50 : 100;
+  
+  if (!isDeleting && charIndex === currentWord.length) {
+    typingSpeed = 2000; // Pause at end of word
+    isDeleting = true;
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    wordIndex = (wordIndex + 1) % dynamicWords.length;
+    typingSpeed = 500; // Pause before typing next word
+  }
+  
+  setTimeout(typeWriter, typingSpeed);
+}
+
 if (dynamicTextEl) {
-  setInterval(() => {
-    dynamicTextEl.classList.add('fade');
-    setTimeout(() => {
-      dynamicIndex = (dynamicIndex + 1) % dynamicWords.length;
-      dynamicTextEl.textContent = dynamicWords[dynamicIndex];
-      dynamicTextEl.classList.remove('fade');
-    }, 400); // Wait for fade out to complete
-  }, 3000); // Rotate every 3 seconds
+  dynamicTextEl.textContent = '';
+  setTimeout(typeWriter, 1000); // Start typing after loader
 }
 
 // Event Listeners

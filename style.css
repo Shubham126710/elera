@@ -239,11 +239,14 @@ body {
 }
 #dynamic-text {
   display: inline-block;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  border-right: 4px solid var(--text-main);
+  padding-right: 4px;
+  animation: blink-cursor 0.75s step-end infinite;
+  white-space: nowrap;
 }
-#dynamic-text.fade {
-  opacity: 0;
-  transform: translateY(10px);
+@keyframes blink-cursor {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--text-main); }
 }
 .hero-subtitle {
   font-size: 1.25rem;
@@ -277,9 +280,6 @@ body {
   flex: 1;
   position: relative;
   min-height: 500px;
-  background: rgba(15, 15, 15, 0.4);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -965,14 +965,13 @@ body {
    HERO TICKER
 ------------------------------------------- */
 .hero-ticker {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   overflow: hidden;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.3);
   border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
   backdrop-filter: blur(5px);
   z-index: 10;
   display: flex;
