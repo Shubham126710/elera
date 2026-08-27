@@ -272,12 +272,22 @@
               <span class="timer-display" id="quiz-timer">00:00</span>
             </div>
             
-            <div class="question-header">
-              <h2 id="question-text" class="question-text">Loading question...</h2>
-            </div>
+            <div id="question-layout-container" class="question-layout-container">
+              <!-- Passage Container (Hidden by default) -->
+              <div id="passage-container" class="passage-container" style="display: none;">
+                <p id="passage-text"></p>
+              </div>
 
-            <div id="options-container" class="options-grid">
-              <!-- Options -->
+              <!-- Question & Options Area -->
+              <div class="question-interactive-area">
+                <div class="question-header">
+                  <h2 id="question-text" class="question-text">Loading question...</h2>
+                </div>
+
+                <div id="options-container" class="options-grid">
+                  <!-- Options -->
+                </div>
+              </div>
             </div>
             
             <div class="controls">

@@ -353,6 +353,20 @@ function loadQuestion(index) {
     elements.reviewBtn.textContent = 'MARK_FOR_REVIEW';
   }
 
+  // Render passage if it exists
+  const passageContainer = document.getElementById('passage-container');
+  const passageText = document.getElementById('passage-text');
+  const questionLayoutContainer = document.getElementById('question-layout-container');
+  
+  if (q.passage) {
+    if (passageText) passageText.textContent = q.passage;
+    if (passageContainer) passageContainer.style.display = 'block';
+    if (questionLayoutContainer) questionLayoutContainer.classList.add('has-passage');
+  } else {
+    if (passageContainer) passageContainer.style.display = 'none';
+    if (questionLayoutContainer) questionLayoutContainer.classList.remove('has-passage');
+  }
+
   // Render options
   elements.optionsContainer.innerHTML = '';
   const options = optionsOrder[q.id] || [];
