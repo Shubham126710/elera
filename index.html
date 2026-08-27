@@ -51,8 +51,17 @@
 
         <!-- Syllabus Section Below Fold -->
         <section id="syllabus" class="syllabus-section">
-          <div class="bento-grid">
-            
+          <div class="section-header">
+            <h2>Course Syllabus</h2>
+            <p>Comprehensive curriculum breakdown</p>
+          </div>
+          
+          <div class="syllabus-tabs">
+            <button class="syllabus-tab active" data-target="phc-syllabus">PHC</button>
+            <button class="syllabus-tab" data-target="rm-syllabus">RM</button>
+          </div>
+
+          <div class="bento-grid active" id="phc-syllabus">
             <div class="bento-card span-2">
               <h3>Unit 1: Foundations</h3>
               <p class="card-desc">Master the core concepts of communication.</p>
@@ -64,7 +73,6 @@
                 <li>Culture & Diversity</li>
               </ul>
             </div>
-
             <div class="bento-card span-2">
               <h3>Unit 2: Interpersonal</h3>
               <p class="card-desc">Deepen your understanding of dyadic relationships.</p>
@@ -74,7 +82,6 @@
                 <li>Conflict Management Styles</li>
               </ul>
             </div>
-
             <div class="bento-card span-2">
               <h3>Unit 3: Small Group</h3>
               <p class="card-desc">Navigate team dynamics and roles.</p>
@@ -84,7 +91,6 @@
                 <li>Decision-Making & Leadership</li>
               </ul>
             </div>
-
             <div class="bento-card span-3">
               <h3>Unit 4: Organizational</h3>
               <p class="card-desc">Explore workplace communication.</p>
@@ -93,7 +99,6 @@
                 <li>Organizational Culture</li>
               </ul>
             </div>
-
             <div class="bento-card span-3">
               <h3>Unit 5: Mass Media</h3>
               <p class="card-desc">Mass media evolution and theories.</p>
@@ -102,7 +107,42 @@
                 <li>Mass Communication Theories</li>
               </ul>
             </div>
+          </div>
 
+          <div class="bento-grid" id="rm-syllabus" style="display: none;">
+            <div class="bento-card span-2">
+              <h3>Unit 1: Intro to Research</h3>
+              <p class="card-desc">Fundamentals and methodologies.</p>
+              <ul>
+                <li>Basic, applied, qualitative & quantitative</li>
+                <li>Research process & design</li>
+                <li>Problem formulation & literature review</li>
+                <li>Data gathering & synthesis</li>
+                <li>Analysis & interpretation</li>
+              </ul>
+            </div>
+            <div class="bento-card span-2">
+              <h3>Unit 2: Math & Statistical Tools</h3>
+              <p class="card-desc">Data analysis and IPR concepts.</p>
+              <ul>
+                <li>Statistical data & regression analysis</li>
+                <li>Linear regression & correlation</li>
+                <li>Patents filing & IPR</li>
+                <li>Commercialization & licensing</li>
+                <li>Tech transfer & case studies</li>
+              </ul>
+            </div>
+            <div class="bento-card span-2">
+              <h3>Unit 3: Ethics & Integrity</h3>
+              <p class="card-desc">Standards in academic writing.</p>
+              <ul>
+                <li>Falsification, fabrication & plagiarism</li>
+                <li>Predatory publishing & open access</li>
+                <li>Citation & reproducibility</li>
+                <li>Report structure & layout</li>
+                <li>Documentation standards</li>
+              </ul>
+            </div>
           </div>
         </section>
         
@@ -114,7 +154,8 @@
 
       <!-- Shared Dashboard Header -->
       <header id="dashboard-header" class="header" style="display: none;">
-        <div class="logo-container">
+        <div class="logo-container" style="display: flex; align-items: center; gap: 1rem;">
+          <button id="quiz-back-btn" class="btn ghost-btn small-btn">← Home</button>
           <div class="logo">elera.</div>
         </div>
         <div id="greeting-msg" class="greeting-text"></div>
@@ -139,7 +180,7 @@
               <div class="subject-number">01</div>
               <div class="subject-content">
                 <h3>Principles of Human Communication</h3>
-                <p>11,742 Questions</p>
+                <p>587 Questions</p>
               </div>
             </div>
             <div class="subject-card" data-subject="rm">
@@ -260,12 +301,16 @@
       <div id="view-all-screen" class="screen">
         <div class="view-all-container">
           <div class="view-all-header">
-            <h2>All Questions Reference</h2>
-            <button id="close-view-all-btn" class="btn ghost-btn">Close (Back to Hub)</button>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <h2>Answer Key</h2>
+              <select id="answer-key-subject" class="styled-select">
+                <option value="phc">Principles of Human Comm.</option>
+                <option value="rm">Research Methodology</option>
+              </select>
+            </div>
+            <button id="close-view-all-btn" class="btn ghost-btn">Close</button>
           </div>
-          <div id="questions-list-container" class="questions-list">
-            <!-- Questions injected here via JS -->
-          </div>
+          <div id="questions-list-container" class="questions-list"></div>
         </div>
       </div>
     </div>

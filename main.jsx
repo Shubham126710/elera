@@ -66,6 +66,10 @@ const elements = {
   resultsViewAllBtn: document.getElementById('results-view-all-btn'),
   closeViewAllBtn: document.getElementById('close-view-all-btn'),
   questionsListContainer: document.getElementById('questions-list-container'),
+  answerKeySubject: document.getElementById('answer-key-subject'),
+  
+  // Dashboard Header
+  quizBackBtn: document.getElementById('quiz-back-btn'),
   
   // End Screen elements
   progressCircle: document.getElementById('progress-circle'),
@@ -138,10 +142,11 @@ function showViewAllScreen(sourceScreen) {
 
 function loadMoreViewAll() {
   const startIndex = viewAllLoadedCount;
-  const endIndex = Math.min(startIndex + viewAllLoadAmount, originalQuestions.length);
+  const questionsList = (elements.answerKeySubject && elements.answerKeySubject.value === 'rm') ? rmQuestions : phcQuestions;
+  const endIndex = Math.min(startIndex + viewAllLoadAmount, questionsList.length);
   
   for(let i = startIndex; i < endIndex; i++) {
-    const q = originalQuestions[i];
+    const q = questionsList[i];
     const qDiv = document.createElement('div');
     qDiv.className = 'view-all-item';
     
@@ -165,7 +170,7 @@ function loadMoreViewAll() {
   
   viewAllLoadedCount = endIndex;
   
-  if (viewAllLoadedCount < originalQuestions.length) {
+  if (viewAllLoadedCount < questionsList.length) {
     const loadMoreBtn = document.createElement('button');
     loadMoreBtn.className = 'btn ghost-btn btn-block';
     loadMoreBtn.textContent = 'Load More...';
@@ -453,6 +458,29 @@ document.querySelectorAll('.subject-card').forEach(card => {
 document.getElementById('subject-back-btn')?.addEventListener('click', () => {
   showScreen('start');
 });
+
+// Syllabus Tabs
+document.querySelectorAll('.syllabus-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.syllabus-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.bento-grid').forEach(g => g.style.display = 'none');
+    
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.target).style.display = 'grid';
+  });
+});
+
+if (elements.quizBackBtn) {
+  elements.quizBackBtn.addEventListener('click', showSubjectScreen);
+}
+
+if (elements.answerKeySubject) {
+  elements.answerKeySubject.addEventListener('change', () => {
+    viewAllLoadedCount = 0;
+    elements.questionsListContainer.innerHTML = '';
+    loadMoreViewAll();
+  });
+}
 
 // Initialization
 // Event Listeners

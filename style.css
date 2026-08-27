@@ -298,7 +298,51 @@ body {
   grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 3rem auto;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.section-header p {
+  color: var(--text-muted);
+}
+.syllabus-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.syllabus-tab {
+  background: var(--bg-card);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.syllabus-tab.active,
+.syllabus-tab:hover {
+  background: var(--text-main);
+  color: var(--bg-color);
+  border-color: var(--text-main);
+}
+.styled-select {
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 .bento-card {
   background: var(--bg-card);
