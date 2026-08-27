@@ -930,22 +930,35 @@ body {
     left: 0;
   }
   .right-sidebar {
-    order: -1; 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 }
 @media (max-width: 600px) {
   .landing-nav {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 1rem;
     gap: 1rem;
-    padding: 1.5rem;
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.8rem;
   }
   .hero-title { font-size: 2.5rem; }
   .right-sidebar { grid-template-columns: 1fr; }
+  .right-sidebar .sidebar-header { display: none; }
+  .stats-box { margin-bottom: 1rem; }
+  .finish-btn { margin-top: 0; }
   .greeting-text { display: none; }
+  .question-text { font-size: 1.2rem; }
 }
 
 ::-webkit-scrollbar {
