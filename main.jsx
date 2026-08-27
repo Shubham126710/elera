@@ -509,12 +509,15 @@ window.addEventListener('load', () => {
   // Particles
   const particlesContainer = document.getElementById('loader-particles');
   if (particlesContainer) {
-    for(let i = 0; i < 40; i++) {
+    for(let i = 0; i < 80; i++) {
       const p = document.createElement('div');
       p.className = 'particle';
       p.style.left = `${Math.random() * 100}%`;
-      p.style.animationDuration = `${3 + Math.random() * 4}s`;
-      p.style.animationDelay = `${Math.random() * 2}s`;
+      // Negative delay means the animation is already in progress when the page loads
+      p.style.animationDelay = `-${Math.random() * 8}s`; 
+      p.style.animationDuration = `${3 + Math.random() * 5}s`;
+      p.style.opacity = Math.random() * 0.8 + 0.2;
+      p.style.transform = `scale(${Math.random() * 1.5 + 0.5})`;
       particlesContainer.appendChild(p);
     }
   }
