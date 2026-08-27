@@ -27,7 +27,7 @@ const navItemsPerPage = 40;
 // DOM Elements
 const screens = {
   start: document.getElementById('start-screen'),
-  subject: document.getElementById('subject-screen'),
+  dashboard: document.getElementById('dashboard-screen'),
   quiz: document.getElementById('quiz-screen'),
   end: document.getElementById('end-screen'),
   viewAll: document.getElementById('view-all-screen')
@@ -461,7 +461,7 @@ function endQuiz() {
 // Start Exam Buttons -> Subject Screen
 function showSubjectScreen() {
   if (elements.highScoreDisplay) elements.highScoreDisplay.textContent = highScore;
-  showScreen('subject');
+  showScreen('dashboard');
 }
 
 // Subject Selection
@@ -477,7 +477,7 @@ document.querySelectorAll('.subject-card').forEach(card => {
     startQuiz();
   });
 });
-document.getElementById('subject-back-btn')?.addEventListener('click', () => {
+document.getElementById('dashboard-back-btn')?.addEventListener('click', () => {
   showScreen('start');
 });
 
