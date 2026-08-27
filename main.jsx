@@ -1,4 +1,5 @@
-import { questions as originalQuestions } from './questions.js';
+import { questions as phcQuestions } from './questions.js';
+import { questions as rmQuestions } from './src/rm-questions.js';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import DitherHero from './src/DitherHero.jsx';
@@ -9,7 +10,7 @@ if (ditherRoot) {
   createRoot(ditherRoot).render(<DitherHero color="#ffffff" backgroundColor="#0b0b0b" />);
 }
 
-// App State
+let originalQuestions = phcQuestions;
 let currentQuestions = [...originalQuestions];
 let currentQuestionIndex = 0;
 let answers = {}; // question.id -> { selected, isCorrect }
@@ -25,6 +26,7 @@ const navItemsPerPage = 40;
 // DOM Elements
 const screens = {
   start: document.getElementById('start-screen'),
+  subject: document.getElementById('subject-screen'),
   quiz: document.getElementById('quiz-screen'),
   end: document.getElementById('end-screen'),
   viewAll: document.getElementById('view-all-screen')
@@ -430,11 +432,33 @@ function endQuiz() {
   showScreen('end');
 }
 
+// Start Exam Buttons -> Subject Screen
+function showSubjectScreen() {
+  showScreen('subject');
+}
+
+// Subject Selection
+document.querySelectorAll('.subject-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const subject = card.dataset.subject;
+    if (subject === 'phc') {
+      originalQuestions = phcQuestions;
+    } else if (subject === 'rm') {
+      originalQuestions = rmQuestions;
+    }
+    viewAllLoadedCount = 0; // reset view all cache
+    startQuiz();
+  });
+});
+document.getElementById('subject-back-btn')?.addEventListener('click', () => {
+  showScreen('start');
+});
+
 // Initialization
 // Event Listeners
-if (elements.heroStartBtn) elements.heroStartBtn.addEventListener('click', startQuiz);
-if (elements.navStartBtn) elements.navStartBtn.addEventListener('click', startQuiz);
-elements.restartBtn.addEventListener('click', startQuiz); 
+if (elements.heroStartBtn) elements.heroStartBtn.addEventListener('click', showSubjectScreen);
+if (elements.navStartBtn) elements.navStartBtn.addEventListener('click', showSubjectScreen);
+elements.restartBtn.addEventListener('click', showSubjectScreen); 
 elements.retryBtn.addEventListener('click', startQuiz);
 
 elements.prevBtn.addEventListener('click', () => loadQuestion(currentQuestionIndex - 1));

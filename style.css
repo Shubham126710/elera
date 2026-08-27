@@ -830,3 +830,60 @@ body {
   font-weight: 600;
   margin-right: 0.5rem;
 }
+
+/* -------------------------------------------
+   SUBJECT SELECTION SCREEN
+------------------------------------------- */
+#subject-screen {
+  flex-direction: column;
+}
+.subject-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+.subject-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+.subject-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.subject-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent);
+  transform: translateY(-5px);
+}
+.subject-icon {
+  font-size: 3rem;
+}
+.subject-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.subject-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
