@@ -493,6 +493,21 @@ window.addEventListener('load', () => {
   }, 600); // slight delay for premium feel
 });
 
+// Dynamic Hero Text
+const dynamicWords = ["quiz prep", "learning", "research", "exam prep"];
+let dynamicIndex = 0;
+const dynamicTextEl = document.getElementById('dynamic-text');
+if (dynamicTextEl) {
+  setInterval(() => {
+    dynamicTextEl.classList.add('fade');
+    setTimeout(() => {
+      dynamicIndex = (dynamicIndex + 1) % dynamicWords.length;
+      dynamicTextEl.textContent = dynamicWords[dynamicIndex];
+      dynamicTextEl.classList.remove('fade');
+    }, 400); // Wait for fade out to complete
+  }, 3000); // Rotate every 3 seconds
+}
+
 // Event Listeners
 if (elements.heroStartBtn) elements.heroStartBtn.addEventListener('click', showSubjectScreen);
 if (elements.navStartBtn) elements.navStartBtn.addEventListener('click', showSubjectScreen);

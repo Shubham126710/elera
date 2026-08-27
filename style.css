@@ -164,11 +164,23 @@ body {
 }
 
 .landing-nav {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1000px;
+  background: rgba(11, 11, 11, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 100px;
+  padding: 0.8rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 4rem;
-  border-bottom: 1px solid var(--border-color);
+  z-index: 1000;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 .nav-links {
   display: flex;
@@ -225,6 +237,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#dynamic-text {
+  display: inline-block;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+#dynamic-text.fade {
+  opacity: 0;
+  transform: translateY(10px);
+}
 .hero-subtitle {
   font-size: 1.25rem;
   color: var(--text-muted);
@@ -254,9 +274,9 @@ body {
 
 /* Hero Graphic (Dither stack) */
 .hero-graphic-container {
+  flex: 1;
   position: relative;
-  width: 100%;
-  height: 450px;
+  min-height: 500px;
   background: rgba(15, 15, 15, 0.4);
   border: 1px solid var(--border-color);
   border-radius: 12px;
@@ -939,6 +959,45 @@ body {
   border: 1px solid var(--success);
   color: var(--text-main);
   background: rgba(74, 222, 128, 0.05);
+}
+
+/* -------------------------------------------
+   HERO TICKER
+------------------------------------------- */
+.hero-ticker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  overflow: hidden;
+  background: rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  display: flex;
+}
+.ticker-content {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker-scroll 30s linear infinite;
+}
+.ticker-content span {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 2rem;
+}
+.ticker-content .dot {
+  color: var(--accent);
+  margin: 0;
+}
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 .opt-letter {
   font-weight: 600;

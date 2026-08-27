@@ -98,10 +98,12 @@ function BookStack({ color, bgColor }) {
     return temp;
   }, []);
 
-  useFrame(() => {
+  useFrame((state) => {
     if (group.current) {
         // Continuous clockwise rotation
-        group.current.rotation.y = -(Date.now() * 0.0002);
+        group.current.rotation.y = -(state.clock.elapsedTime * 0.2);
+        // Premium gentle floating effect
+        group.current.position.y = Math.sin(state.clock.elapsedTime * 1.5) * 0.3;
     }
   });
 
