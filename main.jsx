@@ -483,6 +483,16 @@ if (elements.answerKeySubject) {
 }
 
 // Initialization
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const loader = document.getElementById('global-loader');
+    if (loader) {
+      loader.classList.add('hidden');
+      setTimeout(() => loader.remove(), 800);
+    }
+  }, 600); // slight delay for premium feel
+});
+
 // Event Listeners
 if (elements.heroStartBtn) elements.heroStartBtn.addEventListener('click', showSubjectScreen);
 if (elements.navStartBtn) elements.navStartBtn.addEventListener('click', showSubjectScreen);
