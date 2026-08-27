@@ -213,8 +213,7 @@ body {
 /* Hero Section */
 .hero-section {
   position: relative;
-  height: 100vh;
-  max-height: 1000px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -223,7 +222,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  padding: 12rem 4rem 8rem;
+  padding: 10rem 4rem 10rem;
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;

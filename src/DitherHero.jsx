@@ -102,12 +102,12 @@ function BookStack({ color, bgColor }) {
             isText: true,
             text: Math.random() > 0.5 ? '?' : '!',
             position: [
-                (Math.random() - 0.5) * 14,
-                (Math.random() - 0.5) * 12,
-                (Math.random() - 0.5) * 6
+                (Math.random() - 0.5) * 8, // reduced scatter range
+                (Math.random() - 0.5) * 8, // reduced scatter range
+                (Math.random() - 0.5) * 4  // reduced scatter range
             ],
             rotation: [Math.random() * 0.2, (Math.random() - 0.5) * Math.PI, 0],
-            scale: 2 + Math.random() * 3
+            scale: 2 + Math.random() * 2
         });
     }
     
@@ -146,7 +146,7 @@ function BookStack({ color, bgColor }) {
 export default function DitherHero({ color = '#ffffff', backgroundColor = '#0a0a0a', position = [0, 0, 0] }) {
   return (
     <div style={{ width: '100%', height: '100%' }}>
-      <Canvas orthographic camera={{ zoom: 32, position: [20, 20, 20] }} gl={{ alpha: true }}>
+      <Canvas orthographic camera={{ zoom: 18, position: [20, 20, 20] }} gl={{ alpha: true }}>
         <group position={position}>
             <BookStack color={color} bgColor={backgroundColor} />
         </group>
