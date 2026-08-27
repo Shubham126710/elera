@@ -60,7 +60,7 @@ const DitherMaterial = shaderMaterial(
       if (light < threshold) {
         gl_FragColor = vec4(uColor, 1.0);
       } else {
-        gl_FragColor = vec4(uBgColor, 1.0);
+        gl_FragColor = vec4(uBgColor, 0.0);
       }
     }
   `
@@ -122,8 +122,8 @@ function BookStack({ color, bgColor }) {
 // --- 3. Main Component ---
 export default function DitherHero({ color = '#ffffff', backgroundColor = '#0a0a0a', position = [0, 0, 0] }) {
   return (
-    <div style={{ width: '100%', height: '100%', backgroundColor }}>
-      <Canvas orthographic camera={{ zoom: 22, position: [20, 20, 20] }}>
+    <div style={{ width: '100%', height: '100%' }}>
+      <Canvas orthographic camera={{ zoom: 22, position: [20, 20, 20] }} gl={{ alpha: true }}>
         <group position={position}>
             <BookStack color={color} bgColor={backgroundColor} />
         </group>

@@ -206,7 +206,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  padding: 6rem 4rem;
+  padding: 10rem 4rem 6rem;
   max-width: 1400px;
   margin: 0 auto;
   align-items: center;

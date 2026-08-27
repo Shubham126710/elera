@@ -494,7 +494,7 @@ window.addEventListener('load', () => {
 });
 
 // Dynamic Hero Text (Typewriter Effect)
-const dynamicWords = ["quiz prep.", "learning.", "research.", "exam prep."];
+const dynamicWords = ["platform_", "companion_", "hub_", "resource_"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
